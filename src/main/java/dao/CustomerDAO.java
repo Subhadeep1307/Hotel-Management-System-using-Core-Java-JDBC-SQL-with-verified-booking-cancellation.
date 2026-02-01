@@ -35,7 +35,7 @@ public class CustomerDAO {
         return customerId;
     }
 
-    // Verify customer by ID and Name (used in cancellation)
+    // Verify customer by ID and Name (for cancellation)
     public boolean verifyCustomer(int customerId, String name) {
         String sql = "SELECT 1 FROM customers WHERE customer_id = ? AND name = ?";
 
@@ -54,4 +54,5 @@ public class CustomerDAO {
         return false;
     }
 }
+
 
